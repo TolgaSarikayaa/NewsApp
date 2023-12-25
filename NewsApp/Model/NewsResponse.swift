@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct NewsResponse : Codable {
+struct NewsResponse : Decodable {
     var articles : [News]
 }

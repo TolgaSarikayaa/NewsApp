@@ -17,6 +17,7 @@
 		148B4D072B39B89B006448A1 /* NewsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148B4D062B39B89B006448A1 /* NewsResponse.swift */; };
 		148B4D092B39BB45006448A1 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148B4D082B39BB45006448A1 /* NewsCell.swift */; };
 		148B4D0B2B39BD28006448A1 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148B4D0A2B39BD28006448A1 /* WebServices.swift */; };
+		148B4D0E2B39CBAB006448A1 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 148B4D0D2B39CBAB006448A1 /* SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				148B4D0E2B39CBAB006448A1 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +129,9 @@
 			dependencies = (
 			);
 			name = NewsApp;
+			packageProductDependencies = (
+				148B4D0D2B39CBAB006448A1 /* SDWebImage */,
+			);
 			productName = NewsApp;
 			productReference = 148B4CE92B39B0E1006448A1 /* NewsApp.app */;
 			productType = "com.apple.product-type.application";
@@ -155,6 +160,9 @@
 				Base,
 			);
 			mainGroup = 148B4CE02B39B0E1006448A1;
+			packageReferences = (
+				148B4D0C2B39CBAB006448A1 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 148B4CEA2B39B0E1006448A1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -411,6 +419,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		148B4D0C2B39CBAB006448A1 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.18.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		148B4D0D2B39CBAB006448A1 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 148B4D0C2B39CBAB006448A1 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 148B4CE12B39B0E1006448A1 /* Project object */;
 }

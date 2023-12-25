@@ -16,7 +16,8 @@ class WebServices {
     private let session = URLSession.shared
     
     func fetchNews(completion: @escaping ([News]?) -> Void) {
-        let urlString = "https://newsapi.org/v2/top-headlines?country=us&apiKey=950d670b55e945ebb025596570b8e57"
+        
+        let urlString = "https://newsapi.org/v2/top-headlines?country=us&apiKey=950d670b55e945ebb025596570b8e57d"
         
         if let url = URL(string: urlString) {
             session.dataTask(with: url) { data, response, error in
